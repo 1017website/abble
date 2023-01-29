@@ -2,17 +2,27 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PeopleController;
+use App\Http\Controllers\SpecializationsController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\CommunityController;
+use App\Http\Controllers\JobsController;
+use App\Http\Controllers\KnowledgeController;
+use App\Http\Controllers\ContactController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/about', [HomeController::class, 'index']);
+Route::get('/ourvalues', [HomeController::class, 'ourvalues']);
+Route::get('/people', [PeopleController::class, 'index']);
+Route::get('/ourdirectors', [PeopleController::class, 'ourdirectors']);
+Route::get('/consultants', [PeopleController::class, 'consultants']);
+Route::get('/specializations', [SpecializationsController::class, 'index']);
+Route::get('/services', [ServicesController::class, 'index']);
+Route::get('/community', [CommunityController::class, 'index']);
+Route::get('/partnership', [CommunityController::class, 'partnership']);
+Route::get('/volunteering', [CommunityController::class, 'volunteering']);
+Route::get('/diversityandinclusion', [CommunityController::class, 'diversityandinclusion']);
+Route::get('/jobs', [JobsController::class, 'index']);
+Route::get('/knowledge', [KnowledgeController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index']);
