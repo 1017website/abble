@@ -25,4 +25,5 @@ Route::get('/volunteering', [CommunityController::class, 'volunteering']);
 Route::get('/diversityandinclusion', [CommunityController::class, 'diversityandinclusion']);
 Route::get('/jobs', [JobsController::class, 'index']);
 Route::get('/knowledge', [KnowledgeController::class, 'index']);
+
 Route::get('/contact', [ContactController::class, 'index']);
