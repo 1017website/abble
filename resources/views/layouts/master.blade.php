@@ -5,7 +5,10 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        
         <title>abbleSearch</title>
+        <link rel="icon" type="image/x-icon" href="/assets/images/logoheader.png">
+        
         <link href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('assets/css/fontawesome.css')}}" rel="stylesheet">
         <link href="{{asset('assets/css/templatemo-plot-listing.css')}}" rel="stylesheet" >
