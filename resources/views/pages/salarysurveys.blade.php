@@ -18,7 +18,7 @@
 <div class="main-banner-bg" style="background-image:none; background-color:white">
     <div class="container">
         <div id="myModal" class="modal fade">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog  modal-lg modal-dialog-centered">
                 <div class="modal-content" style="border-radius:1.5rem!important">
                     <div class="modal-header" style="width:fit-content!important">
                         <h5 class="modal-title">Download Salary Surveys</h5>
@@ -53,12 +53,12 @@
     </div>
 </div>
 
+@endsection
+
+@section('jquery')
 <script>
     $(document).ready(function () {
         $("#myModal").modal('show');
     });
 </script>
-
 @endsection
-
-@section('jquery')

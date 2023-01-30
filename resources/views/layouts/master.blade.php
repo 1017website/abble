@@ -15,12 +15,6 @@
         <link href="{{asset('assets/css/animated.css')}}" rel="stylesheet" >
         <link href="{{asset('assets/css/owl.css')}}" rel="stylesheet">
 
-        <script src="{{asset('assets/jquery/jquery.min.js')}}"></script>
-        <script src="{{asset('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('assets/js/owl-carousel.js')}}"></script>
-        <script src="{{asset('assets/js/animation.js')}}"></script>
-        <script src="{{asset('assets/js/imagesloaded.js')}}"></script>
-        <script src="{{asset('assets/js/custom.js')}}"></script>
     </head>
     <body>
         <div id="js-preloader" class="js-preloader">
@@ -122,4 +116,12 @@
         </footer>
 
     </body>
+
+    <script src="{{asset('assets/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('assets/js/owl-carousel.js')}}"></script>
+    <script src="{{asset('assets/js/animation.js')}}"></script>
+    <script src="{{asset('assets/js/imagesloaded.js')}}"></script>
+    <script src="{{asset('assets/js/custom.js')}}"></script>
+    @yield('jquery')
 </html>
