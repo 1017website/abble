@@ -13,6 +13,11 @@ class CommunityController extends Controller {
         return view('pages.community', []);
     }
 
+    public function community() {
+
+        return view('pages.community', []);
+    }
+
     public function partnership() {
 
         return view('pages.partnership', []);

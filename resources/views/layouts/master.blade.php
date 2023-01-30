@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s" ">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -65,6 +65,7 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Community</a>
                                     <div class="dropdown-menu m-0">
+                                        <a href="/community" class="dropdown-item">Community</a>
                                         <a href="/partnership" class="dropdown-item">Partnership</a>
                                         <a href="/volunteering" class="dropdown-item">Volunteering</a>
                                         <a href="/diversityandinclusion" class="dropdown-item">Diversity &amp; Inclusion</a>
