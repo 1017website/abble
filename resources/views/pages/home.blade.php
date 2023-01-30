@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="main-banner" style="background-image: url(assets/images/banner-bg.jpg); padding: 0px 0px 669px 0px; ">
+<div class="main-banner" style="background-image: url({{asset('assets/images/bannerabout.jpg')}}); padding: 0px 0px 669px 0px; ">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
