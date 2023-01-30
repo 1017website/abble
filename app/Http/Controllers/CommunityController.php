@@ -23,4 +23,9 @@ class CommunityController extends Controller {
         return view('pages.volunteering', []);
     }
 
+    public function diversityandinclusion() {
+
+        return view('pages.diversityandinclusion', []);
+    }
+
 }

@@ -5,15 +5,22 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        
+
         <title>abbleSearch</title>
-        <link rel="icon" type="image/x-icon" href="/assets/images/logoheader.png">
-        
+        <link rel="icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico')}}">
+
         <link href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('assets/css/fontawesome.css')}}" rel="stylesheet">
         <link href="{{asset('assets/css/templatemo-plot-listing.css')}}" rel="stylesheet" >
         <link href="{{asset('assets/css/animated.css')}}" rel="stylesheet" >
         <link href="{{asset('assets/css/owl.css')}}" rel="stylesheet">
+
+        <script src="{{asset('assets/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('assets/js/owl-carousel.js')}}"></script>
+        <script src="{{asset('assets/js/animation.js')}}"></script>
+        <script src="{{asset('assets/js/imagesloaded.js')}}"></script>
+        <script src="{{asset('assets/js/custom.js')}}"></script>
     </head>
     <body>
         <div id="js-preloader" class="js-preloader">
@@ -33,7 +40,7 @@
                     <div class="col-12">
                         <nav class="main-nav">
                             <a href="/" class="logo">
-                                <img src="{{asset('assets/images/logoheader.png')}}">
+                                <img src="{{asset('assets/images/logoheader.png')}}" loading="lazy">
                             </a>
                             <div class="nav">
                                 <div class="nav-item dropdown" style="">
@@ -66,20 +73,20 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
                                     <div class="dropdown-menu m-0">
-                                        <a href="latestjob.html" class="dropdown-item">Latest Job</a>
-                                        <a href="joinabblesearch.html" class="dropdown-item">Join Abblesearch</a>
+                                        <a href="/latestjob" class="dropdown-item">Latest Job</a>
+                                        <a href="/joinabblesearch" class="dropdown-item">Join Abblesearch</a>
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Knowledge</a>
                                     <div class="dropdown-menu m-0">
-                                        <a href="news.html" class="dropdown-item">News</a>
-                                        <a href="thoughtleadership.html" class="dropdown-item">Thought Leadership</a>
-                                        <a href="salarysurveys.html" class="dropdown-item">Salary Surveys</a>
+                                        <a href="/news" class="dropdown-item">News</a>
+                                        <a href="/thoughtleadership" class="dropdown-item">Thought Leadership</a>
+                                        <a href="/salarysurveys" class="dropdown-item">Salary Surveys</a>
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="contact.html" class="nav-link dropdown-toggle" >Contact</a>
+                                    <a href="/contact" class="nav-link dropdown-toggle" >Contact</a>
                                 </div>
 
                             </div>  
@@ -102,7 +109,7 @@
                     <div class="col-6">
                         <nav class="main-nav">
                             <a href="index.html" class="logo">
-                                <img src="{{asset('assets/images/logo.png')}}">
+                                <img src="{{asset('assets/images/logo.png')}}" loading="lazy">
                             </a>
                         </nav>
                     </div>
@@ -113,11 +120,5 @@
             </div>
         </footer>
 
-        <script src="{{asset('assets/jquery/jquery.min.js')}}"></script>
-        <script src="{{asset('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('assets/js/owl-carousel.js')}}"></script>
-        <script src="{{asset('assets/js/animation.js')}}"></script>
-        <script src="{{asset('assets/js/imagesloaded.js')}}"></script>
-        <script src="{{asset('assets/js/custom.js')}}"></script>
     </body>
 </html>

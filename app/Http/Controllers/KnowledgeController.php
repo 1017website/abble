@@ -8,10 +8,19 @@ class KnowledgeController extends Controller {
         
     }
 
-    public function index() {
+    public function news() {
 
-        return view('pages.knowledge', []);
+        return view('pages.news', []);
     }
 
+    public function salarysurveys() {
+
+        return view('pages.salarysurveys', []);
+    }
+
+    public function thoughtleadership() {
+
+        return view('pages.thoughtleadership', []);
+    }
 
 }

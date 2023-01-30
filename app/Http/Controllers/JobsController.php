@@ -13,5 +13,9 @@ class JobsController extends Controller {
         return view('pages.jobs', []);
     }
 
+    public function joinabblesearch() {
+
+        return view('pages.joinabblesearch', []);
+    }
 
 }
