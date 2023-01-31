@@ -25,20 +25,20 @@
                 <div class="col-sm-12">
                     <div class="row">
                         <div class="col-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem;">
-                            <img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/bannercommunity.jpg">
-                            <h5 style="font-weight: bold;margin-top:2rem;text-align: center">Partnerships</h5>
+                            <a href="/partnership"><img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/bannercommunity.jpg">
+                                <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Partnerships</h5></a>
                         </div>
                         <div class="col-1" style="margin:-2rem -2rem -2rem -2rem">
                         </div>
                         <div class="col-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
-                            <img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/imgpartnership.jpg">
-                            <h5 style="font-weight: bold;margin-top:2rem;text-align: center">Volunteering</h5>
+                            <a href="/volunteering"><img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/imgpartnership.jpg">
+                            <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Volunteering</h5></a>
                         </div>
                         <div class="col-1" style="margin:-2rem -2rem -2rem -2rem">
                         </div>
                         <div class="col-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
-                            <img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/imgdiversity.jpg">
-                            <h5 style="font-weight: bold;margin-top:2rem;text-align: center">Diversity &amp; Inclusion</h5>
+                            <a href="/diversityandinclusion"><img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/imgdiversity.jpg">
+                            <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Diversity &amp; Inclusion</h5></a>
                         </div>
                     </div>
                 </div>

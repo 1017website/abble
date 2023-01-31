@@ -75,6 +75,7 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Knowledge</a>
                                     <div class="dropdown-menu m-0">
+                                        <a href="/knowledge" class="dropdown-item">Knowledge</a>
                                         <a href="/news" class="dropdown-item">News</a>
                                         <a href="/thoughtleadership" class="dropdown-item">Thought Leadership</a>
                                         <a href="/salarysurveys" class="dropdown-item">Salary Surveys</a>

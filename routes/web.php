@@ -25,6 +25,7 @@ Route::get('/volunteering', [CommunityController::class, 'volunteering']);
 Route::get('/diversityandinclusion', [CommunityController::class, 'diversityandinclusion']);
 Route::get('/latestjob', [JobsController::class, 'index']);
 Route::get('/joinabblesearch', [JobsController::class, 'joinabblesearch']);
+Route::get('/knowledge', [KnowledgeController::class, 'index']);
 Route::get('/news', [KnowledgeController::class, 'news']);
 Route::get('/salarysurveys', [KnowledgeController::class, 'salarysurveys']);
 Route::get('/thoughtleadership', [KnowledgeController::class, 'thoughtleadership']);
