@@ -21,38 +21,53 @@
         <div id="myModal" class="modal fade">
             <div class="modal-dialog  modal-lg modal-dialog-centered">
                 <div class="modal-content" style="border-radius:1.5rem!important">
-                    <div class="modal-header" style="width:fit-content!important">
-                        <h5 class="modal-title">Download Salary Surveys</h5>
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="padding:3rem 3rem 3rem 3rem">Download Salary Surveys</h5>
                     </div>
-                    <div class="modal-body">
-                        <form  action="/action_page.php" style="width:fit-content!important">
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <input style="width: fit-content;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
-                                           type="text" id="fname" name="firstname" placeholder="First Name">
+                    <div class="modal-body" style="padding:3rem 3rem 3rem 3rem">
+                        <div class="container">
+                            <form  action="#">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input style="width: 100%;background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
+                                               type="text" id="fname" name="firstname" placeholder="First Name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input style="width: 100%;background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
+                                               type="text" id="fname" name="lastname" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-sm-12" style="margin-top: 30px">
+                                        <input style="width: 100%;background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent" 
+                                               type="text" id="lname" name="email" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-sm-12" style="margin-top: 30px">
+                                        <input style="width: 100%;background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent" 
+                                               type="text" id="lname" name="email" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-sm-6" style="margin-top: 30px">
+                                        <input style="width: 100%;background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
+                                               type="text" id="fname" name="firstname" placeholder="First Name">
+                                    </div>
+                                    <div class="col-sm-6" style="margin-top: 30px">
+                                        <input style="width: 100%;background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
+                                               type="text" id="fname" name="lastname" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-sm-12" style="margin-top: 30px;margin-bottom:2rem">
+                                        <label><input type="checkbox"> I consent to Abblesearch processing my personal information in accordance with the Abblesearch Privacy Statement</label>
+                                    </div>
                                 </div>
-                                <div class="col-sm-1">
-                                </div>
-                                <div class="col-sm-5">
-                                    <input style="width: fit-content;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
-                                           type="text" id="fname" name="lastname" placeholder="Last Name">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10">
-                                    <input style="width: fit-content;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent" 
-                                           type="text" id="lname" name="email" placeholder="Your Email">
-                                </div>
-                            </div>
-                            <input style="align-content: center; width:100px;background-color:#0f64b6; color:white;border-radius:10px;border-color: transparent; border-style:none" type="submit" value="Submit">
-
-                        </form>
+                                <input style="align-content: center; width:100px;background-color:#0f64b6; color:white;border-radius:10px;border-color: transparent; border-style:none" type="submit" value="Submit">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
 
 @endsection
 

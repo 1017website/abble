@@ -37,27 +37,27 @@
                                 <img src="{{asset('assets/images/logoheader.png')}}" loading="lazy">
                             </a>
                             <div class="nav">
-                                <div class="nav-item dropdown" style="">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">About</a>
                                     <div class="dropdown-menu m-0">
                                         <a href="/ourvalues" class="dropdown-item">Our Values</a>
                                     </div>
                                 </div>          
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">People</a>
+                                    <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">People</a>
                                     <div class="dropdown-menu m-0">
                                         <a href="/ourdirectors" class="dropdown-item">Our Directors</a>
                                         <a href="/consultants" class="dropdown-item">Consultants</a>
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="/specializations" class="nav-link dropdown-toggle" >Specializations</a>
+                                    <a href="/specializations" class="nav-link dropdown">Specializations</a>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="/services" class="nav-link dropdown-toggle" >Services</a>
+                                    <a href="/services" class="nav-link dropdown">Services</a>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Community</a>
+                                    <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown" >Community</a>
                                     <div class="dropdown-menu m-0">
                                         <a href="/community" class="dropdown-item">Community</a>
                                         <a href="/partnership" class="dropdown-item">Partnership</a>
@@ -66,14 +66,14 @@
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
+                                    <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">Jobs</a>
                                     <div class="dropdown-menu m-0">
                                         <a href="/latestjob" class="dropdown-item">Latest Job</a>
                                         <a href="/joinabblesearch" class="dropdown-item">Join Abblesearch</a>
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Knowledge</a>
+                                    <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">Knowledge</a>
                                     <div class="dropdown-menu m-0">
                                         <a href="/knowledge" class="dropdown-item">Knowledge</a>
                                         <a href="/news" class="dropdown-item">News</a>
@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="/contact" class="nav-link dropdown-toggle" >Contact</a>
+                                    <a href="/contact" class="nav-link dropdown ">Contact</a>
                                 </div>
 
                             </div>  
