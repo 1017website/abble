@@ -15,7 +15,8 @@
     </div>
 </div>
 
-<div class="main-banner-bg" style="background-image:none; background-color:white">
+
+<div class="main-banner-bg" style="background-image:none; background-color:white;">
     <div class="container">
         <div id="myModal" class="modal fade">
             <div class="modal-dialog  modal-lg modal-dialog-centered">

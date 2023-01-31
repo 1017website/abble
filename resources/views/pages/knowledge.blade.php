@@ -44,7 +44,7 @@
                         <p style="margin:0 0 0 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et
                         </p>
                         <form  action="/salarysurveys" style="margin:1.5rem 0 0 0;">
-                            <input style="width:auto;height:auto;background-color:#0f64b6; color:white;border-radius:0;border-color: transparent; border-style:none;" type="submit" value="Download Report">
+                            <input style="width:200px;height:40px;background-color:#19337f; color:white;border-color: transparent" class="center" type="submit" value="Download Report">
                         </form>
                     </div>
                 </div>

@@ -21,28 +21,28 @@
             <h4 style="margin-bottom: 0px; margin-left: 3rem">Community</h4>
             <br>
             <p style="margin-left:3rem">Through collaboration with local and international partners and employee volunteers, we work on deliverables, focusing on improving communities</p>
-            <div class="row">
+            
                 <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem;">
-                            <a href="/partnership"><img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/bannercommunity.jpg">
+                    <div class="row" style="margin-top:3rem;margin-bottom:3rem">
+                        <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem;">
+                            <a href="/partnership"><img style="width:108%; margin-left:-12px" src="assets/images/community.jpg">
                                 <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Partnerships</h5></a>
                         </div>
-                        <div class="col-1" style="margin:-2rem -2rem -2rem -2rem">
+                        <div class="col-sm-1" style="margin:-2rem -2rem -2rem -2rem">
                         </div>
-                        <div class="col-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
-                            <a href="/volunteering"><img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/imgpartnership.jpg">
+                        <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
+                            <a href="/volunteering"><img style="width:108%; margin-left:-12px" src="assets/images/partnership_1.jpg">
                             <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Volunteering</h5></a>
                         </div>
-                        <div class="col-1" style="margin:-2rem -2rem -2rem -2rem">
+                        <div class="col-sm-1" style="margin:-2rem -2rem -2rem -2rem">
                         </div>
-                        <div class="col-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
-                            <a href="/diversityandinclusion"><img style="width:108%; margin-left:-12px;height:fit-content" src="assets/images/imgdiversity.jpg">
+                        <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
+                            <a href="/diversityandinclusion"><img style="width:108%; margin-left:-12px" src="assets/images/diversity.jpg">
                             <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Diversity &amp; Inclusion</h5></a>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </div>
 </div>
