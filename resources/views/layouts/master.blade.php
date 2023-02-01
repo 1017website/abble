@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
 
         <title>abbleSearch</title>
-        <link rel="icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico')}}">
+        <link rel="icon" type="image/x-icon" href="{{asset('assets/images/icon.ico')}}">
 
         <link href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('assets/css/fontawesome.css')}}" rel="stylesheet">
@@ -34,7 +34,7 @@
                     <div class="col-12">
                         <nav class="main-nav">
                             <a href="/" class="logo">
-                                <img src="{{asset('assets/images/logoheader.png')}}" loading="lazy">
+                                <img src="{{asset('assets/images/logoputih.png')}}" loading="lazy" style="width:70%!important">
                             </a>
                             <div class="nav">
                                 <div class="nav-item dropdown">
