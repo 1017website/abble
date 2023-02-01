@@ -39,7 +39,7 @@
                         <p style="text-align: center" class="center">Learning &amp; Enabling Growth</p>
                         <p style="text-align: center" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
                     </div>
-                    <div class="col-sm-1">
+                    <div class="col-sm-2">
                     </div>
                     <div class="col-sm-5"style="margin-bottom: 1rem;">
                         <img style="width:10%" class="center" src="assets/images/legal.png"> 
@@ -57,7 +57,7 @@
                         <p style="text-align: center" class="center">Well-Being</p>
                         <p style="text-align: center" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
                     </div>
-                    <div class="col-sm-1">
+                    <div class="col-sm-2">
                     </div>
                     <div class="col-sm-5" style="margin-bottom: 1rem;">
                         <img style="width:10%" class="center" src="assets/images/legal.png"> 
@@ -82,7 +82,7 @@
                     <h6 >Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
             <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
@@ -94,7 +94,7 @@
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
             <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
@@ -106,7 +106,7 @@
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
         </div>

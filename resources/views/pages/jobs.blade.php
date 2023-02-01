@@ -28,67 +28,67 @@
                     <h6 >Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
             <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
                 <div class="col-sm-6" style="padding:0 0 0 0">
-                    <p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                    <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6>
+                    <a href="#" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
+                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
             <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
                 <div class="col-sm-6" style="padding:0 0 0 0">
-                    <p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                    <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6>
+                    <a href="#" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
+                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
             <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
                 <div class="col-sm-6" style="padding:0 0 0 0">
-                    <p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                    <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6>
+                    <a href="#" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
+                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
             <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
                 <div class="col-sm-6" style="padding:0 0 0 0">
-                    <p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                    <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6>
+                    <a href="#" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
+                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
             <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
                 <div class="col-sm-6" style="padding:0 0 0 0">
-                    <p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                    <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6>
+                    <a href="#" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
+                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px">Posted 29/11/2022</p>
+                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
                 </div>
             </div>
         </div>

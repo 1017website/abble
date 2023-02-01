@@ -19,35 +19,33 @@
     <h4 style="margin-bottom: 0px;; text-align: center;margin-top:3rem">News, Insights &amp; Analysis on the talent market and trends</h4>
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:0px; ">
-
-            <div class="col-sm-12">
-                <div class="row" style="margin-top:3rem;margin-bottom:3rem">
-                    <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem;">
-                        <a href="/news"><img style="width:108%; margin-left:-12px;position:relative" src="assets/images/imgnews.jpg">
-                            <h5 style="font-weight: bold;margin-top:2rem;text-align: justify;color:black">News</h5></a>
-                        <p style="margin:0 0 0 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce semper non tellus a mollis. 
-                        </p>
-                    </div>
-                    <div class="col-sm-1" style="margin:-2rem -2rem -2rem -2rem">
-                    </div>
-                    <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
-                        <a href="/thoughtleadership"><img style="width:108%; margin-left:-12px" src="assets/images/leader.jpg">
-                            <h5 style="font-weight: bold;margin-top:2rem;text-align: justify;color:black">Thought Leadership</h5></a>
-                        <p style="margin:0 0 0 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce semper non tellus a mollis. 
-                        </p>
-                    </div>
-                    <div class="col-sm-1" style="margin:-2rem -2rem -2rem -2rem">
-                    </div>
-                    <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
-                        <a href="/salarysurveys"><img style="width:108%; margin-left:-12px" src="assets/images/salary.jpg">
-                            <h5 style="font-weight: bold;margin-top:2rem;text-align: justify;color:black">Salary Surveys</h5></a>
-                        <p style="margin:0 0 0 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et
-                        </p>
-                        <form  action="/salarysurveys" style="margin:1.5rem 0 0 0;">
-                            <input style="width:200px;height:40px;background-color:#19337f; color:white;border-color: transparent" class="center" type="submit" value="Download Report">
-                        </form>
-                    </div>
+            <div class="row" style="margin-top:3rem;margin-bottom:3rem">
+                <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem;">
+                    <a href="/news"><img style="width:108%; margin-left:-12px;position:relative" src="assets/images/imgnews.jpg">
+                        <h5 style="font-weight: bold;margin-top:2rem;text-align: justify;color:black">News</h5></a>
+                    <p style="margin:0 0 0 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce semper non tellus a mollis. 
+                    </p>
                 </div>
+                <div class="col-sm-2" style="margin:-2rem -2rem -2rem -2rem">
+                </div>
+                <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
+                    <a href="/thoughtleadership"><img style="width:108%; margin-left:-12px" src="assets/images/leader.jpg">
+                        <h5 style="font-weight: bold;margin-top:2rem;text-align: justify;color:black">Thought Leadership</h5></a>
+                    <p style="margin:0 0 0 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce semper non tellus a mollis. 
+                    </p>
+                </div>
+                <div class="col-sm-2" style="margin:-2rem -2rem -2rem -2rem">
+                </div>
+                <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
+                    <a href="/salarysurveys"><img style="width:108%; margin-left:-12px" src="assets/images/salary.jpg">
+                        <h5 style="font-weight: bold;margin-top:2rem;text-align: justify;color:black">Salary Surveys</h5></a>
+                    <p style="margin:0 0 0 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et
+                    </p>
+                    <form  action="/salarysurveys" style="margin:1.5rem 0 0 0;">
+                        <input style="width:200px;height:40px;background-color:#19337f; color:white;border-color: transparent" class="center" type="submit" value="Download Report">
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>
