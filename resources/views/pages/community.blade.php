@@ -22,23 +22,27 @@
             <br>
             <p>Through collaboration with local and international partners and employee volunteers, we work on deliverables, focusing on improving communities</p>
             <div class="row" style="margin-top:3rem;margin-bottom:3rem">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem;">
-                            <a href="/partnership"><img style="width:108%; margin-left:-12px" src="assets/images/community.jpg">
-                                <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Partnerships</h5></a>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 25rem;background-color:#ececec;border:transparent">
+                        <a href="/partnership"><img class="card-img-top" src="assets/images/community.jpg" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <h6 class="card-text" style="text-align: center">Partnerships</h6>
                         </div>
-                        <div class="col-sm-2" style="margin:-2rem -2rem -2rem -2rem">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 25rem;background-color:#ececec;border:transparent">
+                        <a href="/thoughtleadership"><img class="card-img-top" src="assets/images/partnership_1.jpg" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <h6 class="card-text" style="text-align: center">Volunteering</h6>
                         </div>
-                        <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
-                            <a href="/volunteering"><img style="width:108%; margin-left:-12px" src="assets/images/partnership_1.jpg">
-                                <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Volunteering</h5></a>
-                        </div>
-                        <div class="col-sm-2" style="margin:-2rem -2rem -2rem -2rem">
-                        </div>
-                        <div class="col-sm-3" style="background-color:#ececec;margin-bottom:auto;padding-bottom: 2rem">
-                            <a href="/diversityandinclusion"><img style="width:108%; margin-left:-12px" src="assets/images/diversity.jpg">
-                                <h5 style="font-weight: bold;margin-top:2rem;text-align: center;color:black">Diversity &amp; Inclusion</h5></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 25rem;background-color:#ececec;border:transparent">
+                        <a href="/diversityandinclusion"><img class="card-img-top" src="assets/images/diversity.jpg" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <h6 class="card-text" style="text-align: center">Diversity &amp; Inclusion</h6>
                         </div>
                     </div>
                 </div>

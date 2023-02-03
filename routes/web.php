@@ -12,6 +12,7 @@ use App\Http\Controllers\KnowledgeController;
 use App\Http\Controllers\ContactController;
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'index']);
 Route::get('/ourvalues', [HomeController::class, 'ourvalues']);
 Route::get('/people', [PeopleController::class, 'index']);

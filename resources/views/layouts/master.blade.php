@@ -38,7 +38,7 @@
                             </a>
                             <div class="nav">
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">About</a>
+                                    <a href="/home" class="nav-link">About</a>
                                     <div class="dropdown-menu m-0">
                                         <a href="/ourvalues" class="dropdown-item">Our Values</a>
                                     </div>
@@ -57,9 +57,8 @@
                                     <a href="/services" class="nav-link dropdown">Services</a>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown" >Community</a>
+                                    <a href="/community" class="nav-link" >Community</a>
                                     <div class="dropdown-menu m-0">
-                                        <a href="/community" class="dropdown-item">Community</a>
                                         <a href="/partnership" class="dropdown-item">Partnership</a>
                                         <a href="/volunteering" class="dropdown-item">Volunteering</a>
                                         <a href="/diversityandinclusion" class="dropdown-item">Diversity &amp; Inclusion</a>
@@ -73,9 +72,8 @@
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">Knowledge</a>
+                                    <a href="/knowledge" class="nav-link">Knowledge</a>
                                     <div class="dropdown-menu m-0">
-                                        <a href="/knowledge" class="dropdown-item">Knowledge</a>
                                         <a href="/news" class="dropdown-item">News</a>
                                         <a href="/thoughtleadership" class="dropdown-item">Thought Leadership</a>
                                         <a href="/salarysurveys" class="dropdown-item">Salary Surveys</a>
