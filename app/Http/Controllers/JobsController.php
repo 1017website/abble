@@ -18,4 +18,9 @@ class JobsController extends Controller {
         return view('pages.joinabblesearch', []);
     }
 
+    public function latestjobs() {
+
+        return view('pages.latestjobs', []);
+    }
+
 }
