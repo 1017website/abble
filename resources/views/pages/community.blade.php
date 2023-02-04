@@ -15,39 +15,36 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12" style="margin-bottom:0px; margin-top:3rem">
-            <h4 style="margin-bottom: 0px">Community</h4>
-            <br>
-            <p>Through collaboration with local and international partners and employee volunteers, we work on deliverables, focusing on improving communities</p>
-            <div class="row" style="margin-top:3rem;margin-bottom:3rem">
-                <div class="col-sm-4">
-                    <div class="card" style="width: 25rem;background-color:#ececec;border:transparent">
-                        <a href="/partnership"><img class="card-img-top" src="assets/images/community.jpg" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <h6 class="card-text" style="text-align: center">Partnerships</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width: 25rem;background-color:#ececec;border:transparent">
-                        <a href="/volunteering"><img class="card-img-top" src="assets/images/partnership_1.jpg" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <h6 class="card-text" style="text-align: center">Volunteering</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card" style="width: 25rem;background-color:#ececec;border:transparent">
-                        <a href="/diversityandinclusion"><img class="card-img-top" src="assets/images/diversity.jpg" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <h6 class="card-text" style="text-align: center">Diversity &amp; Inclusion</h6>
-                        </div>
-                    </div>
+<div class="container" style="margin-bottom:0px; margin-top:3rem">
+    <h4 style="margin-bottom: 0px">Community</h4>
+    <br>
+    <p>Through collaboration with local and international partners and employee volunteers, we work on deliverables, focusing on improving communities</p>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="margin-top:3rem;margin-bottom:3rem">
+        <div class="col">
+            <div class="card shadow-sm" style="border:transparent">
+                <a href="/partnership"><img class="card-img-top" width="100%" height="100%" src="assets/images/community.jpg" alt="Card image cap" focusable="false"></a>
+                <div class="card-body" style="background-color: #ececec">
+                    <h6 class="card-text" style="text-align: center">Partnerships</h6>
                 </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card shadow-sm" style="border:transparent">
+                <a href="/partnership"><img class="card-img-top" width="100%" height="100%" src="assets/images/partnership_1.jpg" alt="Card image cap" focusable="false"></a>
+                <div class="card-body" style="background-color: #ececec">
+                    <h6 class="card-text" style="text-align: center">Volunteering</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm" style="width:100%;background-color:#ececec;border:transparent">
+                <a href="/partnership"><img class="card-img-top" width="100%" height="100%" src="assets/images/diversity.jpg" alt="Card image cap" focusable="false"></a>
+                <div class="card-body" style="background-color: #ececec">
+                    <h6 class="card-text" style="text-align: center">Diversity &amp; Inclusion</h6>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 @endsection

@@ -35,15 +35,13 @@
         <div class="row">
             <div class ="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-5" style="margin-bottom: 2rem;">
+                    <div class="col-sm-6" style="margin-bottom: 2rem;">
                         <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="assets/images/imgbook.png">   
                         <p style="text-align: center;margin-bottom: 1rem" class="center">Learning &amp; Enabling Growth</p>
                         <p style="text-align: center;margin-bottom: 1rem" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
                     </div>
-                    <div class="col-sm-2">
-                    </div>
-                    <div class="col-sm-5"style="margin-bottom: 2rem;">
-                        <img style="width:10%;margin-bottom: 1rem" class="center" src="assets/images/legal.png"> 
+                    <div class="col-sm-6"style="margin-bottom: 2rem;">
+                        <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="assets/images/imgplane.png"> 
                         <p style="text-align: center;margin-bottom: 1rem;" class="center">Relocation Opportunities</p>
                         <p style="text-align: center;margin-bottom: 1rem" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
                     </div>
@@ -53,15 +51,13 @@
         <div class="row">
             <div class ="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-5" style="margin-bottom: 2rem;">
-                        <img style="width:10%;margin-bottom: 1rem" class="center" src="assets/images/legal.png">   
+                    <div class="col-sm-6" style="margin-bottom: 2rem;">
+                        <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="assets/images/imgwell.png">
                         <p style="text-align: center;margin-bottom: 1rem" class="center">Well-Being</p>
                         <p style="text-align: center;margin-bottom: 1rem" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
                     </div>
-                    <div class="col-sm-2">
-                    </div>
-                    <div class="col-sm-5" style="margin-bottom: 2rem;">
-                        <img style="width:10%;margin-bottom: 1rem" class="center" src="assets/images/legal.png"> 
+                    <div class="col-sm-6" style="margin-bottom: 2rem;">
+                        <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="assets/images/imgawarding.png">
                         <p style="text-align: center;margin-bottom: 1rem" class="center">Rewarding Perfomance</p>
                         <p style="text-align: center;margin-bottom: 1rem" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
                     </div>
