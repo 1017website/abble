@@ -18,77 +18,76 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem">
-            <h4 style="margin-bottom: 2rem; margin-left: 3rem">Latest Job</h4>
-            <div class="row" style="margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <a href="/latestjobs" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6 >Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
-            <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <a href="/latestjobs" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
-            <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <a href="/latestjobs" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
-            <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <a href="/latestjobs" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
-            <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <a href="/latestjobs" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
-            <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <a href="/latestjobs" style="color:black"><p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                        <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
         </div>

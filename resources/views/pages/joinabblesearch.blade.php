@@ -18,13 +18,14 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem">
-            <h4 style="margin-bottom: 2rem; margin-left: 3rem">Join Abblesearch</h4>
-            <p style="margin-bottom: 2rem; margin-left: 3rem;font-weight: bold;font-size: 13pt">We adopt a "one team", collaborative approach for all our offices</p>
-            <p style="margin-bottom: 2rem; margin-left: 3rem">We work in partnership with our clients. They trust us to provide an exceptional service and we strive to live up to our promise "Enabling Growth"</p>
-            <p style="margin-bottom: 2rem; margin-left: 3rem">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
-            <p style="margin-bottom: 2rem; margin-left: 3rem">We provide support by offering training and continual opportunities. Above all, we give our consultants the freedom both to leverage on our international platform and also to independently grow.</p>
-            <p style="margin-bottom: 2rem; margin-left: 3rem">We are committed to giving back to our community through CSR activities. Our team are given paid time off to volunteer monthlv.</p>
-            <p style="margin-bottom: 2rem; margin-left: 3rem">If you are ambitious and driven, we want you!</p>
+            <h4>Join Abblesearch</h4>
+            <p>We adopt a "one team", collaborative approach for all our offices
+                <br>We work in partnership with our clients. They trust us to provide an exceptional service and we strive to live up to our promise "Enabling Growth"
+                <br>Our consultants and researchers are what makes us special and we are always open to strengthen our team.
+                <br>We provide support by offering training and continual opportunities. Above all, we give our consultants the freedom both to leverage on our international platform and also to independently grow.
+                <br>We are committed to giving back to our community through CSR activities. Our team are given paid time off to volunteer monthlv.
+                <br>
+                If you are ambitious and driven, we want you!</p>
         </div>
     </div>
 </div>
@@ -73,40 +74,41 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem">
-            <div class="row" style="margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                    <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6>
+            <h4>Latest Job</h4>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6 >Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
-            <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                    <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
-            <div class="row" style="margin-top:2rem;margin-left:3rem;margin-right: 3rem">
-                <div class="col-sm-6" style="padding:0 0 0 0">
-                    <p style="margin: 0px 0px 0px 0px">Associate Director (Hongkong)<p>
-                    <h6 style="margin-top:-20px;">HR, Insurance, Sales &amp; Marketing, Technology</h6>
+            <div class="row" style="margin-bottom:2rem">
+                <div class="col-sm-6">
+                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
+                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
                 </div>
                 <div class="col-sm-3">
                     <h6>Hongkong</h6>
                 </div>
                 <div class="col-sm-3">
-                    <p style="margin: 0px 0px 0px 0px;float:right">Posted 29/11/2022</p>
+                    <p style="float:right">Posted 29/11/2022</p>
                 </div>
             </div>
         </div>
