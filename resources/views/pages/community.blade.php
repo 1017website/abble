@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card" style="width: 25rem;background-color:#ececec;border:transparent">
-                        <a href="/thoughtleadership"><img class="card-img-top" src="assets/images/partnership_1.jpg" alt="Card image cap"></a>
+                        <a href="/volunteering"><img class="card-img-top" src="assets/images/partnership_1.jpg" alt="Card image cap"></a>
                         <div class="card-body">
                             <h6 class="card-text" style="text-align: center">Volunteering</h6>
                         </div>

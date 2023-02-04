@@ -57,7 +57,7 @@
                                     <a href="/services" class="nav-link dropdown">Services</a>
                                 </div>
                                 <div class="nav-item dropdown">
-                                    <a href="/community" class="nav-link" >Community</a>
+                                    <a href="/community" class="nav-link" onclick="void(0)">Community</a>
                                     <div class="dropdown-menu m-0">
                                         <a href="/partnership" class="dropdown-item">Partnership</a>
                                         <a href="/volunteering" class="dropdown-item">Volunteering</a>
