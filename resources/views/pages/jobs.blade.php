@@ -18,7 +18,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem">
-            <h4>Latest Job</h4>
+            <h4>Jobs</h4>
             <div class="row" style="margin-bottom:2rem">
                 <div class="col-sm-6">
                     <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>

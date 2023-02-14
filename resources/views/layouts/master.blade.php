@@ -59,7 +59,7 @@
                                 <div class="nav-item dropdown">
                                     <a href="/community" class="nav-link" onclick="void(0)">Community</a>
                                     <div class="dropdown-menu m-0">
-                                        <a href="/partnership" class="dropdown-item">Partnership</a>
+                                        <a href="/partnership" class="dropdown-item">Charity & Industry Partnerships</a>
                                         <a href="/volunteering" class="dropdown-item">Volunteering</a>
                                         <a href="/diversityandinclusion" class="dropdown-item">Diversity &amp; Inclusion</a>
                                     </div>
@@ -67,7 +67,7 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown" onclick="void(0)">Jobs</a>
                                     <div class="dropdown-menu m-0">
-                                        <a href="/latestjob" class="dropdown-item">Latest Job</a>
+                                        <a href="/latestjob" class="dropdown-item">Jobs</a>
                                         <a href="/joinabblesearch" class="dropdown-item">Join Abblesearch</a>
                                     </div>
                                 </div>
