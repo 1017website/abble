@@ -19,13 +19,7 @@
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem;text-align: justify">
             <h4>Join Abblesearch</h4>
-            <p style="font-weight: bold">We adopt a "one team", collaborative approach for all our offices</p>
-                <p>We work in partnership with our clients. They trust us to provide an exceptional service and we strive to live up to our promise "Enabling Growth"
-                <br>Our consultants and researchers are what makes us special and we are always open to strengthen our team.
-                <br>We provide support by offering training and continual opportunities. Above all, we give our consultants the freedom both to leverage on our international platform and also to independently grow.
-                <br>We are committed to giving back to our community through CSR activities. Our team are given paid time off to volunteer monthlv.
-                <br>
-                If you are ambitious and driven, we want you!</p>
+            {!! isset($modelDescription) ? $modelDescription->description : '' !!}
         </div>
     </div>
 </div>
@@ -35,32 +29,15 @@
         <div class="row">
             <div class ="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-6" style="margin-bottom: 2rem;">
-                        <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="assets/images/imgbook.png">   
-                        <p style="text-align: center;margin-bottom: 1rem" class="center">Learning &amp; Enabling Growth</p>
-                        <p style="text-align: center;margin-bottom: 1rem" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
-                    </div>
-                    <div class="col-sm-6"style="margin-bottom: 2rem;">
-                        <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="assets/images/imgplane.png"> 
-                        <p style="text-align: center;margin-bottom: 1rem;" class="center">Relocation Opportunities</p>
-                        <p style="text-align: center;margin-bottom: 1rem" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class ="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-6" style="margin-bottom: 2rem;">
-                        <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="assets/images/imgwell.png">
-                        <p style="text-align: center;margin-bottom: 1rem" class="center">Well-Being</p>
-                        <p style="text-align: center;margin-bottom: 1rem" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
-                    </div>
-                    <div class="col-sm-6" style="margin-bottom: 2rem;">
-                        <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="assets/images/imgawarding.png">
-                        <p style="text-align: center;margin-bottom: 1rem" class="center">Rewarding Perfomance</p>
-                        <p style="text-align: center;margin-bottom: 1rem" class="center2">Our consultants and researchers are what makes us special and we are always open to strengthen our team.</p>
-                    </div>
+                    <?php if (isset($modelBenefit)) { ?>
+                        <?php foreach ($modelBenefit as $row => $value) { ?>
+                            <div class="col-sm-6" style="margin-bottom: 2rem;">
+                                <img style="margin-bottom: 1rem;inline-size:auto" class="center" src="{{ $urlBackend.$value->image }}">   
+                                <p style="text-align: center;margin-bottom: 1rem" class="center">{{ $value->name }}</p>
+                                <p style="text-align: center;margin-bottom: 1rem" class="center2">{{ strip_tags($value->description) }}</p>
+                            </div>
+                        <?php } ?>
+                    <?php } ?>
                 </div>
             </div>
         </div>
@@ -71,42 +48,24 @@
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem">
             <h4>Latest Job</h4>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6 >Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
+
+            <?php if (isset($modelJob)) { ?>
+                <?php foreach ($modelJob as $row => $value) { ?>
+                    <div class="row" style="margin-bottom:2rem">
+                        <div class="col-sm-6">
+                            <a href="jobdetail/{{ $value->id }}" style="color:black"><p>{{ $value->position }} ({{ $value->place }})<p>
+                                <h6>{{ $value->role }}</h6></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <h6>{{ $value->place }}</h6>
+                        </div>
+                        <div class="col-sm-3">
+                            <p style="float:right">Posted {{ $value->updated_at }}</p>
+                        </div>
+                    </div>
+                <?php } ?>
+            <?php } ?>
+
         </div>
     </div>
 </div>

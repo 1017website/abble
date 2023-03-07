@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CommunityDiversity;
+
 class CommunityController extends Controller {
 
     public function __construct() {
@@ -29,8 +31,15 @@ class CommunityController extends Controller {
     }
 
     public function diversityandinclusion() {
+        $maintenance = Controller::maintenance();
+        if ($maintenance) {
+            return view('layouts.maintenance');
+        }
 
-        return view('pages.diversityandinclusion', []);
+        $urlBackend = Controller::urlBackend();
+        $model = CommunityDiversity::first();
+
+        return view('pages.diversityandinclusion', ['model' => $model]);
     }
 
 }

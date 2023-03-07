@@ -19,78 +19,22 @@
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem">
             <h4>Jobs</h4>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6 >Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom:2rem">
-                <div class="col-sm-6">
-                    <a href="/latestjobs" style="color:black"><p>Associate Director (Hongkong)<p>
-                        <h6>HR, Insurance, Sales &amp; Marketing, Technology</h6></a>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Hongkong</h6>
-                </div>
-                <div class="col-sm-3">
-                    <p style="float:right">Posted 29/11/2022</p>
-                </div>
-            </div>
+            <?php if (isset($model)) { ?>
+                <?php foreach ($model as $row => $value) { ?>
+                    <div class="row" style="margin-bottom:2rem">
+                        <div class="col-sm-6">
+                            <a href="jobdetail/{{ $value->id }}" style="color:black"><p>{{ $value->position }} ({{ $value->place }})<p>
+                                <h6>{{ $value->role }}</h6></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <h6>{{ $value->place }}</h6>
+                        </div>
+                        <div class="col-sm-3">
+                            <p style="float:right">Posted {{ $value->updated_at }}</p>
+                        </div>
+                    </div>
+                <?php } ?>
+            <?php } ?>
         </div>
     </div>
 </div>

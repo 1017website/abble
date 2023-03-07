@@ -29,7 +29,7 @@
         <div class="col-sm-12" style="margin-bottom:5rem; margin-top:0px;">
             <div class="row">
                 <div class="col-sm-5">
-                    <form  action="/action_page.php">
+                    <form  action="#">
                         <input style="width: fit-content;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
                                type="text" id="fname" name="firstname" placeholder="Your Name">                                
                         <input style="width: fit-content;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent" 
@@ -43,12 +43,12 @@
                 </div>
                 <div class="col-sm-5">
                     <h6>Our Locations</h6>
-                    <h6>Singapore</h6>
-                    <p style="font-size:10pt; margin-top:0px">#08-08C Vertex Building, Singapore 408868</p>
-                    <h6>Jakarta</h6>
-                    <p style="font-size:10pt; margin-top:0px; margin-right:0px">Belleza BSA, 1st Floor Unit 106, Jl. Letjen Soepeno, RT 004/ RW 002, Kelurahan Grogol Utara, Kecamatan Kebayoran Lama, Jakarta Selatan 12210</p>
-                    <h6>Philippines</h6>
-                    <p style="font-size:10pt; margin-top:0px">Lorem ipsum dolor sit amet,</p>
+                    <?php if (isset($model)) { ?>
+                        <?php foreach ($model as $row => $value) { ?>
+                            <h6>{{ $value->name }}</h6>
+                            <p style="font-size:10pt; margin-top:0px">{!! strip_tags($value->description) !!}</p>
+                        <?php } ?>
+                    <?php } ?>
                 </div>
             </div>
         </div>

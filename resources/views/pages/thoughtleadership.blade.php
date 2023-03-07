@@ -19,8 +19,8 @@
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem">
             <h4 style="margin-bottom: 0px; ">Thought Leadership</h4>
-            <h6 style="font-weight: 400; font-style: italic; color:grey;margin-bottom: 1rem;margin-bottom: 0px;font-size: 10pt ">3h ago</h6>
-            <img src="assets/images/imgleadership.jpg" style="height:fit-content; width: 100%;margin-top: 1rem; ">
+            <h6 style="font-weight: 400; font-style: italic; color:grey;margin-bottom: 1rem;margin-bottom: 0px;font-size: 10pt ">{{ isset($model) ? $model->created_at : '' }}</h6>
+            <img src="{{ isset($model) ? $urlBackend.$model->image : '' }}" style="height:fit-content; width: 100%;margin-top: 1rem; ">
         </div>
     </div>
 </div>
@@ -28,17 +28,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem;text-align: justify">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce semper non tellus a mollis. In ultricies est sed maximus lobortis. Nam tellus magna, aliquam at nisl ac, malesuada molestie ante. Sed quis pretium dolor. Vivamus luctus velit erat, at placerat magna dictum sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque lacinia quam vel sapien lobortis, sit amet vehicula lectus ultricies.</p>
-            <br>
-            <p>Present vitae purus vehicula odio pharetra elementum. Duis erat tellus, mattis nec leo non, tincidunt scelerisque ipsum, Nulla quis libero ac lacus ullamcorper dapibus quis vel nisl. Sed molestie varius tincidunt. Phasellus ac consequat est. Donec quis malesuada justo, in varius ex. Sed aliquet justo sed accumsan dictum.</p>
-            <br>
-            <p>Nunc finibus vitae odio sed placerat. Curabitur sagittis tincidunt porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam nunc dui, pharetra et diam ac, eleifend tempor justo. Pellentesque erat metus, semper et lacus ut, finibus ullamcorper risus. Cras varius et eros id blandit. Done dignissim, nisi ut fringilla ornare, ante purus cursus risus, vitae sollicitudin ante quam at arcu. Etiam dui nis), iaculiset erat sed, pulvinar finibus ipsum. Maecenas feugiat semper commodo.</p>
-            <br>
-            <p>Duis nulla ante, efficitur ac orci id, iaculis consectetur enim. Vivamus id porttitor dui. Fusce tellus ex, posuere ac tincidunt vel, ultrices sed massa. Nunc turpis risus, sagittis lobortis nunc at, congue ullamcorper felis. Phasellus risus felis, ultricies nec posuere quis, molestie get lorem. Morbi ut ante aliquet, rutrum tellus get, viverra ligula. Morbi lacinia quam ut diam sagittis cursus. Fusce vestibulum massa id augue vulputate, tincidunt pharetra ante dapibus. Sed commodo arcu metus, get egestas lacus dignissim at. Quisque nec elementum eros. Nam ia culis eu augue in lacinia.</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce semper non tellus a mollis. In ultricies est sed maximus lobortis. Nam tellus magna, aliquam at isl ac, malesuada molestie ante. Sed quis pretium dolor. Vivamus luctus velit erat, at placerat magna dictum sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque lacinia quam vel sapien lobortis, sit amet vehicula lectus ultricies.</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in neque venenatis, tincidunt libero et, porta lectus. Nam dictum ultrices vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce semper non tellus a mollis. In ultricies est sed maximus lobortis. Nam tellus magna, aliquam at isl ac, malesuada molestie ante. Sed quis pretium dolor. Vivamus luctus velit erat, at placerat magna dictum sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque lacinia quam vel sapien lobortis, sit amet vehicula lectus ultricies.</p>
+            {!! isset($model) ? $model->description : '' !!}
         </div>
     </div>
 </div>

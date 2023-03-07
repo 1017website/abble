@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
+
 class ContactController extends Controller {
 
     public function __construct() {
@@ -9,9 +11,15 @@ class ContactController extends Controller {
     }
 
     public function index() {
+        $maintenance = Controller::maintenance();
+        if ($maintenance) {
+            return view('layouts.maintenance');
+        }
 
-        return view('pages.contact', []);
+        $urlBackend = Controller::urlBackend();
+        $model = Contact::all();
+
+        return view('pages.contact', ['model' => $model, 'urlBackend' => $urlBackend]);
     }
-
 
 }

@@ -16,7 +16,7 @@
         <link href="{{asset('assets/css/owl.css')}}" rel="stylesheet">
 
     </head>
-    <body>
+    <body class="d-flex flex-column min-vh-100">
         <div id="js-preloader" class="js-preloader">
             <div class="preloader-inner">
                 <span class="dot"></span>
@@ -97,7 +97,7 @@
             @yield('content')
         </main>
 
-        <footer>
+        <footer class="mt-auto">
             <div class="container">
                 <div class="row">                
                     <div class="col-6">
