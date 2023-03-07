@@ -6,7 +6,7 @@
         <meta name="author" content="">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 
-        <title>abbleSearch</title>
+        <title>Abble Search</title>
         <link rel="icon" type="image/x-icon" href="{{asset('assets/images/icon.ico')}}">
 
         <link href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
