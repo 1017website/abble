@@ -14,6 +14,7 @@
         <link href="{{asset('assets/css/templatemo-plot-listing.css')}}" rel="stylesheet" >
         <link href="{{asset('assets/css/animated.css')}}" rel="stylesheet" >
         <link href="{{asset('assets/css/owl.css')}}" rel="stylesheet">
+        <script src="{{asset('assets/jquery/jquery.min.js')}}"></script>
 
     </head>
     <body class="d-flex flex-column min-vh-100">
@@ -116,7 +117,6 @@
 
     </body>
 
-    <script src="{{asset('assets/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('assets/js/owl-carousel.js')}}"></script>
     <script src="{{asset('assets/js/animation.js')}}"></script>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\CommunityDiversity;
+use App\Models\CommunityVolunteering;
+use App\Models\CommunityPartnership;
 
 class CommunityController extends Controller {
 
@@ -21,13 +23,25 @@ class CommunityController extends Controller {
     }
 
     public function partnership() {
+        $maintenance = Controller::maintenance();
+        if ($maintenance) {
+            return view('layouts.maintenance');
+        }
+        $urlBackend = Controller::urlBackend();
+        $model = CommunityPartnership::all();
 
-        return view('pages.partnership', []);
+        return view('pages.partnership', ['model' => $model, 'urlBackend' => $urlBackend]);
     }
 
     public function volunteering() {
+        $maintenance = Controller::maintenance();
+        if ($maintenance) {
+            return view('layouts.maintenance');
+        }
+        $urlBackend = Controller::urlBackend();
+        $model = CommunityVolunteering::all();
 
-        return view('pages.volunteering', []);
+        return view('pages.volunteering', ['model' => $model, 'urlBackend' => $urlBackend]);
     }
 
     public function diversityandinclusion() {
@@ -39,7 +53,7 @@ class CommunityController extends Controller {
         $urlBackend = Controller::urlBackend();
         $model = CommunityDiversity::first();
 
-        return view('pages.diversityandinclusion', ['model' => $model]);
+        return view('pages.diversityandinclusion', ['model' => $model, 'urlBackend' => $urlBackend]);
     }
 
 }
