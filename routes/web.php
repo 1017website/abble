@@ -32,3 +32,4 @@ Route::get('/news', [KnowledgeController::class, 'news']);
 Route::get('/salarysurveys', [KnowledgeController::class, 'salarysurveys']);
 Route::get('/thoughtleadership', [KnowledgeController::class, 'thoughtleadership']);
 Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/jobapply', [JobsController::class, 'jobapply']);

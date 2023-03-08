@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Job;
 use App\Models\JobBenefit;
 use App\Models\JobDescription;
+use App\Models\JobApply;
+use App\Models\Country;
+use App\Models\MasterCurrentlyHiring;
+use App\Models\MasterSpecialization;
+use Illuminate\Http\Request;
 
 class JobsController extends Controller {
 
@@ -46,8 +51,64 @@ class JobsController extends Controller {
 
         $model = Job::where('id', '=', $id)->first();
         $urlBackend = Controller::urlBackend();
+        $country = Country::all();
+        $masterHiring = MasterCurrentlyHiring::all();
+        $masterSpecialization = MasterSpecialization::all();
 
-        return view('pages.latestjobs', ['model' => $model, 'urlBackend' => $urlBackend]);
+        return view('pages.latestjobs', ['model' => $model, 'country' => $country, 'masterHiring' => $masterHiring, 'masterSpecialization' => $masterSpecialization, 'urlBackend' => $urlBackend]);
+    }
+
+    public function jobapply(Request $request) {
+        $request->validate([
+            'cv' => 'mimes:pdf,docx,doc|max:2048',
+            'first_name' => 'required|max:255',
+            'last_name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'phone_code' => 'required',
+            'phone' => 'required',
+        ]);
+
+        $success = true;
+        $message = 'Apply completed';
+
+        if ($success) {
+            try {
+                $model = new JobApply();
+                $model->job_id = isset($request['job_id']) ? $request['job_id'] : NULL;
+                $model->first_name = isset($request['first_name']) ? $request['first_name'] : NULL;
+                $model->last_name = isset($request['last_name']) ? $request['last_name'] : NULL;
+                $model->email = isset($request['email']) ? $request['email'] : NULL;
+                $model->phone_code = isset($request['phone_code']) ? $request['phone_code'] : NULL;
+                $model->phone = isset($request['phone']) ? $request['phone'] : NULL;
+                $model->currently_hiring = isset($request['currently_hiring']) ? $request['currently_hiring'] : NULL;
+                $model->specialization = isset($request['specialization']) ? $request['specialization'] : NULL;
+                if ($request->file('cv') && request('cv') != '') {
+                    if (!file_exists('files')) {
+                        mkdir('files', 0777, true);
+                    }
+                    if (!file_exists('files/cv/')) {
+                        mkdir('files/cv/', 0777, true);
+                    }
+                    if (!empty($model->cv)) {
+                        $filePath = $_SERVER['DOCUMENT_ROOT'] . $model->cv;
+                        if (file_exists($filePath)) {
+                            File::delete($filePath);
+                        }
+                    }
+                    $nameImg = time() . '.' . $request->file('cv')->getClientOriginalExtension();
+                    $destinationPath = $_SERVER['DOCUMENT_ROOT'] . '/files/cv/';
+                    $filePath = $destinationPath . $nameImg;
+                    $request->file('cv')->move($destinationPath, $nameImg);
+                    $model->cv = '/files/cv/' . $nameImg;
+                }
+                $model->save();
+            } catch (Exception $ex) {
+                $success = false;
+                $message = $ex->getMessage();
+            }
+        }
+
+        return redirect('/jobdetail/' . $request['job_id'])->with('success', $message);
     }
 
 }
