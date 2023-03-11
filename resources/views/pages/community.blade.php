@@ -30,7 +30,7 @@
         </div>
         <div class="col">
             <div class="card shadow-sm" style="border:transparent">
-                <a href="/partnership"><img class="card-img-top" width="100%" height="100%" src="assets/images/partnership_1.jpg" alt="Card image cap" focusable="false"></a>
+                <a href="/volunteering"><img class="card-img-top" width="100%" height="100%" src="assets/images/partnership_1.jpg" alt="Card image cap" focusable="false"></a>
                 <div class="card-body" style="background-color: #ececec">
                     <h6 class="card-text" style="text-align: center">Volunteering</h6>
                 </div>
@@ -38,7 +38,7 @@
         </div>
         <div class="col">
             <div class="card shadow-sm" style="width:100%;background-color:#ececec;border:transparent">
-                <a href="/partnership"><img class="card-img-top" width="100%" height="100%" src="assets/images/diversity.jpg" alt="Card image cap" focusable="false"></a>
+                <a href="/diversityandinclusion"><img class="card-img-top" width="100%" height="100%" src="assets/images/diversity.jpg" alt="Card image cap" focusable="false"></a>
                 <div class="card-body" style="background-color: #ececec">
                     <h6 class="card-text" style="text-align: center">Diversity &amp; Inclusion</h6>
                 </div>

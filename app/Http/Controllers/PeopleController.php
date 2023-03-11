@@ -11,6 +11,10 @@ class PeopleController extends Controller {
     }
 
     public function index() {
+        $maintenance = Controller::maintenance();
+        if ($maintenance) {
+            return view('layouts.maintenance');
+        }
 
         return view('pages.people', []);
     }

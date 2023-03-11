@@ -33,3 +33,5 @@ Route::get('/salarysurveys', [KnowledgeController::class, 'salarysurveys']);
 Route::get('/thoughtleadership', [KnowledgeController::class, 'thoughtleadership']);
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/jobapply', [JobsController::class, 'jobapply']);
+Route::post('/downloadsurvey', [KnowledgeController::class, 'downloadsurvey']);
+Route::get('/testemail', [JobsController::class, 'testEmail']);

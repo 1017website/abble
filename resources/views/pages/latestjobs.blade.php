@@ -20,9 +20,6 @@
         @if ($message = Session::get('success'))
         <div class="alert alert-success" role="alert">
             {!! $message !!}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
         </div>
         @endif
 
@@ -86,25 +83,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 mt2">
-                                <select class="form-select d1" id="currently_hiring" name="currently_hiring" aria-label="Default select example">
-                                    <option value="" disabled selected>Currently Hiring</option>
-                                    <?php foreach ($masterHiring as $row => $value) { ?>
-                                        <option value="{{ $value->name }}">{{ $value->name }}</option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                            <div class="col-sm-6 mt2">
-                                <select class="form-select d1" id="specialization" name="specialization" aria-label="Default select example">
-                                    <option value="" disabled selected>Specialization</option>
-                                    <?php foreach ($masterSpecialization as $row => $value) { ?>
-                                        <option value="{{ $value->name }}">{{ $value->name }}</option>
-                                    <?php } ?>
-                                </select>
-                            </div>
                             <div class="col-sm-12 mt2">
                                 <div class="form-group">
-                                    <input type="file" accept=".doc, .docx, .pdf" class="form-control-file" id="cv" class="cv">
+                                     <label for="cv">Cv : </label>
+                                    <input type="file" accept=".doc, .docx, .pdf" class="form-control-file" id="cv" name="cv" class="cv">
                                 </div>
                             </div>
 

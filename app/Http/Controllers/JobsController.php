@@ -10,6 +10,9 @@ use App\Models\Country;
 use App\Models\MasterCurrentlyHiring;
 use App\Models\MasterSpecialization;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
+use App\Mail\SendMailNew;
 
 class JobsController extends Controller {
 
@@ -101,7 +104,21 @@ class JobsController extends Controller {
                     $request->file('cv')->move($destinationPath, $nameImg);
                     $model->cv = '/files/cv/' . $nameImg;
                 }
-                $model->save();
+                if ($model->save()) {
+//                    $mailData = [
+//                        'subject' => 'Job Applied',
+//                        'view' => 'emails.applied_jobs',
+//                        'title' => 'Mail from ItSolutionStuff.com',
+//                        'body' => 'This is for testing email using smtp.',
+//                    ];
+//
+//                    Mail::to($model->email)->send(new SendMail($mailData));
+//                    if (Mail::failures()) {
+//                        return response()->Fail('Sorry! Please try again latter');
+//                    } else {
+//                        return response()->success('Great! Successfully send in your mail');
+//                    }
+                }
             } catch (Exception $ex) {
                 $success = false;
                 $message = $ex->getMessage();
@@ -109,6 +126,18 @@ class JobsController extends Controller {
         }
 
         return redirect('/jobdetail/' . $request['job_id'])->with('success', $message);
+    }
+
+    public function testEmail() {
+        $mailData = [
+            'subject' => 'Job Applied',
+            'view' => 'emails.applied_jobs',
+            'title' => 'Mail from ItSolutionStuff.com',
+            'body' => 'This is for testing email using smtp.',
+        ];
+
+        Mail::to('hokihokiguy@gmail.com')->send(new SendMail($mailData));
+
     }
 
 }
