@@ -106,14 +106,23 @@ class JobsController extends Controller {
                     $model->cv = '/files/cv/' . $nameImg;
                 }
                 if ($model->save()) {
-//                    $mailData = [
-//                        'subject' => 'Job Applied',
-//                        'view' => 'emails.applied_jobs',
-//                        'title' => 'Mail from ItSolutionStuff.com',
-//                        'body' => 'This is for testing email using smtp.',
-//                    ];
-//
-//                    Mail::to($model->email)->send(new SendMail($mailData));
+                    $mailData = [
+                        'subject' => 'Job Applied',
+                        'view' => 'emails.applied_jobs',
+                        'data' => [
+                            'job' => $model->job->role . ' ' . $model->job->place,
+                            'name' => $model->first_name . ' ' . $model->last_name,
+                            'email' => $model->email,
+                            'phone' => '(' . $model->phone_code . ') ' . $model->phone,
+                            'cv' => '<a href="' . asset($model->cv) . '" target="_blank">Download</a>',
+                            'description' => $model->description,
+                        ],
+                    ];
+
+                    $emailAdmin = Controller::emailAdmin();
+                    if (strlen($emailAdmin) > 0) {
+                        Mail::to($emailAdmin)->send(new SendMail($mailData));
+                    }
                 }
             } catch (Exception $ex) {
                 $success = false;
@@ -133,7 +142,6 @@ class JobsController extends Controller {
         ];
 
         Mail::to('hokihokiguy@gmail.com')->send(new SendMail($mailData));
-
     }
 
 }

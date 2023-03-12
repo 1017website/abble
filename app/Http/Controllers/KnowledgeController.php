@@ -9,6 +9,9 @@ use App\Models\Country;
 use App\Models\MasterCurrentlyHiring;
 use App\Models\MasterSpecialization;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
+use App\Mail\SendMailNew;
 
 class KnowledgeController extends Controller {
 
@@ -80,7 +83,7 @@ class KnowledgeController extends Controller {
         ]);
 
         $success = true;
-        $message = 'Request completed';
+        $message = 'Request salary surveys completed';
 
         if ($success) {
             try {
@@ -92,7 +95,24 @@ class KnowledgeController extends Controller {
                 $model->phone = isset($request['phone']) ? $request['phone'] : NULL;
                 $model->currently_hiring = isset($request['currently_hiring']) ? $request['currently_hiring'] : NULL;
                 $model->specialization = isset($request['specialization']) ? $request['specialization'] : NULL;
-                $model->save();
+                if ($model->save()) {
+                    $mailData = [
+                        'subject' => 'Request Salary Surveys',
+                        'view' => 'emails.salary_surveys',
+                        'data' => [
+                            'name' => $model->first_name . ' ' . $model->last_name,
+                            'email' => $model->email,
+                            'phone' => '(' . $model->phone_code . ') ' . $model->phone,
+                            'hiring' => $model->currently_hiring,
+                            'specialization' => $model->specialization,
+                        ],
+                    ];
+
+                    $emailAdmin = Controller::emailAdmin();
+                    if (strlen($emailAdmin) > 0) {
+                        Mail::to($emailAdmin)->send(new SendMail($mailData));
+                    }
+                }
             } catch (Exception $ex) {
                 $success = false;
                 $message = $ex->getMessage();

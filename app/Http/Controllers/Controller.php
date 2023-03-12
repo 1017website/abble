@@ -36,4 +36,24 @@ class Controller extends BaseController {
         return $return;
     }
 
+    public static function urlFrontend() {
+        $return = '';
+        $setting = DB::table('settings')->first();
+        if (isset($setting)) {
+            $return = $setting->domain_frontend;
+        }
+
+        return $return;
+    }
+
+    public static function emailAdmin() {
+        $return = '';
+        $setting = DB::table('settings')->first();
+        if (isset($setting)) {
+            $return = $setting->email;
+        }
+
+        return $return;
+    }
+
 }
