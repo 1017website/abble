@@ -85,6 +85,7 @@ class JobsController extends Controller {
                 $model->phone = isset($request['phone']) ? $request['phone'] : NULL;
                 $model->currently_hiring = isset($request['currently_hiring']) ? $request['currently_hiring'] : NULL;
                 $model->specialization = isset($request['specialization']) ? $request['specialization'] : NULL;
+                $model->description = isset($request['description']) ? $request['description'] : NULL;
                 if ($request->file('cv') && request('cv') != '') {
                     if (!file_exists('files')) {
                         mkdir('files', 0777, true);
@@ -113,11 +114,6 @@ class JobsController extends Controller {
 //                    ];
 //
 //                    Mail::to($model->email)->send(new SendMail($mailData));
-//                    if (Mail::failures()) {
-//                        return response()->Fail('Sorry! Please try again latter');
-//                    } else {
-//                        return response()->success('Great! Successfully send in your mail');
-//                    }
                 }
             } catch (Exception $ex) {
                 $success = false;

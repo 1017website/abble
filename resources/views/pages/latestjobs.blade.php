@@ -82,10 +82,15 @@
                                 <input class="d1" type="text" id="phone" name="phone" placeholder="Your Phone">
                             </div>
                         </div>
+                        <div class="row">                                
+                            <div class="col-sm-12" style="margin-top:2rem">
+                                <textarea style="height:auto!important;" rows="3" class="d1" type="text" id="description" name="description" placeholder="Description"></textarea>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-12 mt2">
                                 <div class="form-group">
-                                     <label for="cv">Cv : </label>
+                                    <label for="cv">Cv </label>
                                     <input type="file" accept=".doc, .docx, .pdf" class="form-control-file" id="cv" name="cv" class="cv">
                                 </div>
                             </div>
