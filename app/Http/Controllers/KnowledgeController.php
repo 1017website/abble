@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\KnowledgeNews;
 use App\Models\KnowledgeThought;
 use App\Models\KnowledgeSalary;
+use App\Models\KnowledgeSalaryDescription;
 use App\Models\Country;
 use App\Models\MasterCurrentlyHiring;
 use App\Models\MasterSpecialization;
@@ -24,8 +25,11 @@ class KnowledgeController extends Controller {
         if ($maintenance) {
             return view('layouts.maintenance');
         }
+        $modelNews = KnowledgeNews::first();
+        $modelThought = KnowledgeThought::first();
+        $modelSalary = KnowledgeSalaryDescription::first();
 
-        return view('pages.knowledge', []);
+        return view('pages.knowledge', ['modelNews' => $modelNews, 'modelThought' => $modelThought, 'modelSalary' => $modelSalary]);
     }
 
     public function knowledge() {
@@ -57,8 +61,10 @@ class KnowledgeController extends Controller {
         $country = Country::all();
         $masterHiring = MasterCurrentlyHiring::all();
         $masterSpecialization = MasterSpecialization::all();
+        $model = KnowledgeSalaryDescription::first();
+        $urlBackend = Controller::urlBackend();
 
-        return view('pages.salarysurveys', ['country' => $country, 'masterHiring' => $masterHiring, 'masterSpecialization' => $masterSpecialization]);
+        return view('pages.salarysurveys', ['urlBackend' => $urlBackend, 'model' => $model, 'country' => $country, 'masterHiring' => $masterHiring, 'masterSpecialization' => $masterSpecialization]);
     }
 
     public function thoughtleadership() {
