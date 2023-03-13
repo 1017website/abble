@@ -33,6 +33,15 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12" style="margin-bottom:3rem;">
+            <button type="button" class="btn btn-primary center" id="btn-modal" style="background-color:#19337f;border:transparent;width: auto; ">Download Report</button>
+        </div>
+    </div>
+</div>
+
+
 <div id="myModal" class="modal fade">
     <div class="modal-dialog  modal-lg modal-dialog-centered">
         <div class="modal-content" style="border-radius:1.5rem!important">
@@ -97,7 +106,7 @@
                                 <label><input type="checkbox"> I consent to Abblesearch processing my personal information in accordance with the Abblesearch Privacy Statement</label>
                             </div>
                         </div>
-                        <button style="width:200px;height:40px;background-color:#19337f; color:white;border-color: transparent;float:left" class="btn center btn-apply mt2" type="submit">Submit</button>
+                        <button style="width:200px;height:40px;background-color:#19337f; color:white;border-color: transparent;float:left;width: auto;" class="btn center btn-apply mt2" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -123,6 +132,10 @@
         $("#phone").inputFilter(function (value) {
             return /^\d*$/.test(value);    // Allow digits only, using a RegExp
         }, "Only digits allowed");
+    });
+
+    $("#btn-modal").click(function () {
+        $("#myModal").modal('show');
     });
 
     // Restricts input for the set of matched elements to the given inputFilter function.
