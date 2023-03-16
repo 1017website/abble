@@ -18,7 +18,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12" style="margin-bottom:3rem; margin-top:3rem">
-            <h4 style="margin-bottom: 0px;padding-bottom: 2rem;"> Diversity &amp; Conclusion</h4>
+            <h4 style="margin-bottom: 0px;padding-bottom: 2rem;"> Diversity &amp; Inclusion</h4>
             {!! isset($model) ? $model->description : '' !!}
         </div>
     </div>
