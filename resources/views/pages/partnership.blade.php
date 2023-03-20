@@ -16,7 +16,7 @@
 </div>
 
 <div class="container" style="margin-top:3rem;margin-bottom:3rem">
-    <h4>Charity &amp; Industry Partnership</h4>
+    <h4>Charity &amp; Industry Partnerships</h4>
     <div class="row row-cols-1 row-cols-sm-2" style="margin-top:3rem">
 
         <?php if (isset($model)) { ?>

@@ -24,7 +24,7 @@
             <div class="card shadow-sm" style="border:transparent">
                 <a href="/partnership"><img class="card-img-top" width="100%" height="100%" src="assets/images/community.jpg" alt="Card image cap" focusable="false"></a>
                 <div class="card-body" style="background-color: #ececec">
-                    <h6 class="card-text" style="text-align: center">Partnerships</h6>
+                    <h6 class="card-text" style="text-align: center">Charity &amp; Industry Partnerships</h6>
                 </div>
             </div>
         </div>
