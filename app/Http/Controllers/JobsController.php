@@ -26,7 +26,7 @@ class JobsController extends Controller {
             return view('layouts.maintenance');
         }
 
-        $model = Job::all();
+        $model = Job::where(['type' => 'jobs'])->orderBy('id', 'DESC')->get();
         $urlBackend = Controller::urlBackend();
 
         return view('pages.jobs', ['model' => $model, 'urlBackend' => $urlBackend]);
@@ -40,7 +40,7 @@ class JobsController extends Controller {
 
         $modelDescription = JobDescription::first();
         $modelBenefit = JobBenefit::all();
-        $modelJob = Job::orderBy('id', 'DESC')->get();
+        $modelJob = Job::where(['type' => 'join abblesearch'])->orderBy('id', 'DESC')->get();
         $urlBackend = Controller::urlBackend();
 
         return view('pages.joinabblesearch', ['modelDescription' => $modelDescription, 'modelBenefit' => $modelBenefit, 'modelJob' => $modelJob, 'urlBackend' => $urlBackend]);
