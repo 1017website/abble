@@ -29,18 +29,36 @@
         <div class="col-sm-12" style="margin-bottom:5rem; margin-top:0px;">
             <div class="row">
                 <div class="col-sm-5">
-                    <form  action="#">
-                        <input style="width: fit-content;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
-                               type="text" id="fname" name="firstname" placeholder="Your Name">                                
-                        <input style="width: fit-content;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent" 
-                               type="text" id="lname" name="lastname" placeholder="Your Email">
-                        <textarea style="width: fit-content;margin-bottom: 10px;height: 100px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent" 
-                                  id="w3review" name="w3review" rows="4" cols="50" placeholder="Messages to us..."></textarea>
-                        <input style="width:100px;background-color:#0f64b6; color:white;border-radius:10px;border-color: transparent; border-style:none" type="submit" value="Submit">
-                    </form>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            @if ($message = Session::get('success'))
+                            <div class="alert alert-success" role="alert">
+                                {!! $message !!}
+                            </div>
+                            @endif
+                        </div>
+
+                        <form action="/contactemail" method="POST">
+                            @csrf
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input style="width: 100%;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent"
+                                           type="text" id="name" name="name" placeholder="Your Name" required="true">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input style="width: 100%;margin-bottom: 10px; height: 35px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent" 
+                                           type="email" id="email" name="email" placeholder="Your Email" required="true">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <textarea style="width: 100%;margin-bottom: 10px;height: 100px; background: linear-gradient(to bottom,#e7e5e5,white); border-style: ridge;border-radius: 10px;border-color:transparent" 
+                                          id="description" name="description" rows="4" cols="50" placeholder="Messages to us..."  required="true"></textarea>
+                            </div>
+                            <button style="width: auto;height:40px;background-color:#19337f; color:white;border-color: transparent;float:left" class="btn center btn-apply" type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-sm-1">
-                </div>
+                <div class="col-sm-1"></div>
                 <div class="col-sm-5">
                     <h6>Our Locations</h6>
                     <?php if (isset($model)) { ?>

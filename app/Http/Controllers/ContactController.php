@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
+use Illuminate\Http\Request;
 
 class ContactController extends Controller {
 
@@ -20,6 +23,34 @@ class ContactController extends Controller {
         $model = Contact::all();
 
         return view('pages.contact', ['model' => $model, 'urlBackend' => $urlBackend]);
+    }
+
+    public function contactemail(Request $request) {
+        $success = true;
+        $message = 'Email sent !';
+
+        if ($success) {
+            try {
+                $mailData = [
+                    'subject' => 'Contact',
+                    'view' => 'emails.contact',
+                    'data' => [
+                        'name' => $request->name,
+                        'email' => $request->email,
+                        'description' => $request->description,
+                    ],
+                ];
+                $emailAdmin = Controller::emailAdmin();
+                if (strlen($emailAdmin) > 0) {
+                    Mail::to($emailAdmin)->send(new SendMail($mailData));
+                }
+            } catch (Exception $ex) {
+                $success = false;
+                $message = $ex->getMessage();
+            }
+        }
+
+        return redirect('/contact')->with('success', $message);
     }
 
 }

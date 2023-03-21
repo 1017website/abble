@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PeopleController;
 use App\Http\Controllers\SpecializationsController;
@@ -31,6 +30,7 @@ Route::get('/knowledge', [KnowledgeController::class, 'index']);
 Route::get('/news', [KnowledgeController::class, 'news']);
 Route::get('/salarysurveys', [KnowledgeController::class, 'salarysurveys']);
 Route::get('/thoughtleadership', [KnowledgeController::class, 'thoughtleadership']);
+Route::post('/contactemail', [ContactController::class, 'contactemail']);
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/jobapply', [JobsController::class, 'jobapply']);
 Route::post('/downloadsurvey', [KnowledgeController::class, 'downloadsurvey']);
