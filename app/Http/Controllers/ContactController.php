@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMail;
@@ -21,8 +22,9 @@ class ContactController extends Controller {
 
         $urlBackend = Controller::urlBackend();
         $model = Contact::all();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.contact', ['model' => $model, 'urlBackend' => $urlBackend]);
+        return view('pages.contact', ['model' => $model, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function contactemail(Request $request) {

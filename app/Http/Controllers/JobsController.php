@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use App\Models\Job;
 use App\Models\JobBenefit;
 use App\Models\JobDescription;
@@ -28,8 +29,9 @@ class JobsController extends Controller {
 
         $model = Job::where(['type' => 'jobs'])->orderBy('id', 'DESC')->get();
         $urlBackend = Controller::urlBackend();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.jobs', ['model' => $model, 'urlBackend' => $urlBackend]);
+        return view('pages.jobs', ['model' => $model, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function joinabblesearch() {
@@ -42,8 +44,9 @@ class JobsController extends Controller {
         $modelBenefit = JobBenefit::all();
         $modelJob = Job::where(['type' => 'join abblesearch'])->orderBy('id', 'DESC')->get();
         $urlBackend = Controller::urlBackend();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.joinabblesearch', ['modelDescription' => $modelDescription, 'modelBenefit' => $modelBenefit, 'modelJob' => $modelJob, 'urlBackend' => $urlBackend]);
+        return view('pages.joinabblesearch', ['modelDescription' => $modelDescription, 'modelBenefit' => $modelBenefit, 'modelJob' => $modelJob, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function jobdetail($id) {

@@ -17,10 +17,12 @@ class HomeController extends Controller {
         if ($maintenance) {
             return view('layouts.maintenance');
         }
-
+        
+        $urlBackend = Controller::urlBackend();
         $model = DB::table('about_description')->first();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.home', ['model' => $model]);
+        return view('pages.home', ['model' => $model, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function home() {
@@ -28,10 +30,12 @@ class HomeController extends Controller {
         if ($maintenance) {
             return view('layouts.maintenance');
         }
-
+        
+        $urlBackend = Controller::urlBackend();
         $model = DB::table('about_description')->first();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.home', ['model' => $model]);
+        return view('pages.home', ['model' => $model, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function ourvalues() {
@@ -42,8 +46,9 @@ class HomeController extends Controller {
         
         $urlBackend = Controller::urlBackend();
         $model = AboutValues::all();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.ourvalues', ['model' => $model, 'urlBackend' => $urlBackend]);
+        return view('pages.ourvalues', ['model' => $model, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
 }

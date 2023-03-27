@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="main-banner" style="background-image: url({{asset('assets/images/bannercommunity.jpg')}}); padding: 120px 0px 300px 0px;">
+<div class="main-banner" style="background-image: url({{isset($banner) ? $urlBackend.$banner->community : asset('assets/images/bannercommunity.jpg')}}); padding: 120px 0px 300px 0px;">
 
     <div class="container">
         <div class="row">
@@ -18,7 +18,7 @@
 <div class="container" style="margin-bottom:0px; margin-top:3rem">
     <h4 style="margin-bottom: 0px">Community</h4>
     <br>
-    <p>Through collaboration with local and international partners and employee volunteers, we work on deliverables, focusing on improving communities</p>
+    {!! isset($model) ? $model->description : '' !!}
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="margin-top:3rem;margin-bottom:3rem">
         <div class="col">
             <div class="card shadow-sm" style="border:transparent">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use App\Models\KnowledgeNews;
 use App\Models\KnowledgeThought;
 use App\Models\KnowledgeSalary;
@@ -28,8 +29,10 @@ class KnowledgeController extends Controller {
         $modelNews = KnowledgeNews::first();
         $modelThought = KnowledgeThought::first();
         $modelSalary = KnowledgeSalaryDescription::first();
+        $urlBackend = Controller::urlBackend();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.knowledge', ['modelNews' => $modelNews, 'modelThought' => $modelThought, 'modelSalary' => $modelSalary]);
+        return view('pages.knowledge', ['modelNews' => $modelNews, 'modelThought' => $modelThought, 'modelSalary' => $modelSalary, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function knowledge() {
@@ -37,8 +40,10 @@ class KnowledgeController extends Controller {
         if ($maintenance) {
             return view('layouts.maintenance');
         }
+        $urlBackend = Controller::urlBackend();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.knowledge', []);
+        return view('pages.knowledge', ['urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function news() {
@@ -63,8 +68,9 @@ class KnowledgeController extends Controller {
         $masterSpecialization = MasterSpecialization::all();
         $model = KnowledgeSalaryDescription::first();
         $urlBackend = Controller::urlBackend();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.salarysurveys', ['urlBackend' => $urlBackend, 'model' => $model, 'country' => $country, 'masterHiring' => $masterHiring, 'masterSpecialization' => $masterSpecialization]);
+        return view('pages.salarysurveys', ['urlBackend' => $urlBackend, 'model' => $model, 'country' => $country, 'masterHiring' => $masterHiring, 'masterSpecialization' => $masterSpecialization, 'banner' => $banner]);
     }
 
     public function thoughtleadership() {

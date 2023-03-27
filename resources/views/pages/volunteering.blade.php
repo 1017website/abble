@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="main-banner" style="background-image: url({{asset('assets/images/bannervolunteering.jpg')}}); padding: 120px 0px 300px 0px;">
+<div class="main-banner" style="background-image: url({{isset($banner) ? $urlBackend.$banner->volunteering : asset('assets/images/bannervolunteering.jpg')}}); padding: 120px 0px 300px 0px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

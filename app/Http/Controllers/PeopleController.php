@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use App\Models\People;
 
 class PeopleController extends Controller {
@@ -15,8 +16,10 @@ class PeopleController extends Controller {
         if ($maintenance) {
             return view('layouts.maintenance');
         }
+        $urlBackend = Controller::urlBackend();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.people', []);
+        return view('pages.people', ['urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function ourdirectors() {
@@ -27,8 +30,9 @@ class PeopleController extends Controller {
 
         $urlBackend = Controller::urlBackend();
         $model = People::where('type', '=', 'directors')->get();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.ourdirectors', ['model' => $model, 'urlBackend' => $urlBackend]);
+        return view('pages.ourdirectors', ['model' => $model, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
     public function consultants() {
@@ -39,8 +43,9 @@ class PeopleController extends Controller {
 
         $urlBackend = Controller::urlBackend();
         $model = People::where('type', '=', 'consultans')->get();
+        $banner = DB::table('banner')->first();
 
-        return view('pages.consultants', ['model' => $model, 'urlBackend' => $urlBackend]);
+        return view('pages.consultants', ['model' => $model, 'urlBackend' => $urlBackend, 'banner' => $banner]);
     }
 
 }

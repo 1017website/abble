@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="main-banner" style="background-image: url(assets/images/bannerknowledge.jpg); padding: 120px 0px 300px 0px;">
+<div class="main-banner" style="background-image: url({{isset($banner) ? $urlBackend.$banner->salarysurveys : asset('assets/images/bannerknowledge.jpg')}}); padding: 120px 0px 300px 0px;">
 
     <div class="container">
         <div class="row">
